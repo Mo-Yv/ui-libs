@@ -4,7 +4,7 @@
     <div class="mt-6 text-center sm:my-12">
       <p class="text-3xl font-semibold tracking-tight sm:text-4xl">
         <!-- Pick the right UI Library -->
-				选择正确的UI库
+				选择合适的UI库
       </p>
       <p class="text-lg sm:text-xl">
         为你的

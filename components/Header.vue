@@ -5,7 +5,7 @@
     <div class="flex items-center justify-between px-4 py-2 md:px-8">
       <div class="hidden h-12 items-center gap-2 md:flex">
         <UIcon class="primary-text h-8 w-8" name="i-ic-outline-palette" />
-        <h1 class="text-xl font-bold">UI Lib Picker</h1>
+        <h1 class="text-xl font-bold">UI库选择器</h1>
       </div>
       <div class="md:invisible">
         <UButton
@@ -36,15 +36,6 @@
         />
 
         <ThemeSelector />
-
-        <UButton
-          icon="i-material-symbols-account-circle-outline"
-          :trailing="false"
-          :to="appConfig.myWebsiteUrl"
-          target="_blank"
-        >
-          <span class="hidden md:inline-block">About Me</span>
-        </UButton>
       </div>
     </div>
   </div>

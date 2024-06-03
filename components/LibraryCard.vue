@@ -6,7 +6,7 @@
     <div class="flex h-full flex-col justify-between">
       <div class="flex items-start justify-between gap-8 px-4 py-2">
         <div class="shrink-0">
-          <UTooltip :text="`Go to ${library.name} website`">
+          <UTooltip :text="`前往 ${library.name} 官网`">
             <UButton
               class="flex flex-col gap-3"
               variant="ghost"
@@ -34,7 +34,7 @@
       <!-- Card footer -->
       <div class="mt-4 flex items-center justify-between">
         <div class="ml-1 flex">
-          <UTooltip v-if="repoUrl && library.nbStars" text="Go to github.com page">
+          <UTooltip v-if="repoUrl && library.nbStars" text="前往github仓库">
             <UButton
               icon="i-mdi-star-outline"
               :label="getDisplayableNumber(library.nbStars)"
@@ -44,7 +44,7 @@
               color="gray"
             />
           </UTooltip>
-          <UTooltip v-if="registryUrl && library.nbDownloads" text="Go to npmjs.com page">
+          <UTooltip v-if="registryUrl && library.nbDownloads" text="前往npmjs页面">
             <UButton
               icon="i-material-symbols-download"
               :label="getDisplayableNumber(library.nbDownloads)"
@@ -61,7 +61,7 @@
               @click="isComponentPanelOpen = true"
               icon="i-heroicons-square-3-stack-3d"
               size="xl"
-              :label="`${nbComponents} components`"
+              :label="`包含 ${nbComponents} 个组件`"
               variant="ghost"
               color="primary"
             />

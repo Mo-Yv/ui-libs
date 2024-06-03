@@ -3,10 +3,11 @@
   <UContainer class="pb-6">
     <div class="mt-6 text-center sm:my-12">
       <p class="text-3xl font-semibold tracking-tight sm:text-4xl">
-        Pick the right UI Library
+        <!-- Pick the right UI Library -->
+				选择正确的UI库
       </p>
       <p class="text-lg sm:text-xl">
-        for your
+        为你的
         <NuxtLink
           to="https://vuejs.org/"
           target="_blank"
@@ -14,14 +15,14 @@
         >
           Vue 3
         </NuxtLink>
-        or
+        或
         <NuxtLink
           to="https://nuxt.com/"
           target="_blank"
           class="primary-text font-semibold"
           >Nuxt 3</NuxtLink
         >
-        Project.
+        项目
       </p>
     </div>
 
@@ -37,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-const title = ref("UI Lib Picker")
+const title = ref("UI库选择器")
 
 const runtimeConfig = useRuntimeConfig()
 const loadPlausible = runtimeConfig.public.loadPlausible == "yes"

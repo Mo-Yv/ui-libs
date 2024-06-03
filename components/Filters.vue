@@ -68,7 +68,7 @@
       variant="ghost"
       size="xs"
       icon="i-material-symbols-delete-outline-rounded"
-      :label="`Clear ${nbTouchedFilters()} filter${suffix}`"
+      :label="`清除 ${nbTouchedFilters()} 个筛选器${suffix}`"
       @click="clearFiltering()"
     />
   </div>
@@ -77,22 +77,22 @@
 <script setup lang="ts">
 const accordionSections = [
   {
-    label: "Main Features",
+    label: "主要特点",
     defaultOpen: true,
     slot: "mainFeatures",
   },
   {
-    label: "More Features",
+    label: "更多特点",
     defaultOpen: true,
     slot: "moreFeatures",
   },
   {
-    label: "Available Components",
+    label: "可用组件",
     defaultOpen: true,
     slot: "availableComponents",
   },
   {
-    label: "Popularity",
+    label: "热度",
     defaultOpen: true,
     slot: "popularity",
   },
